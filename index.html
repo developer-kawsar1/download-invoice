@@ -14,13 +14,13 @@
    padding: 0;
  }
   header{
-    background-color: #6200EE;
+    background-color: #5b39c6;
    height:100px;
     
     
     display: flex;
     text-align: center;
-    background: #F0FFF0;
+    color: #fff;
     border: 1px solid green;
     padding: 0px;
     width: 100%;
@@ -41,7 +41,7 @@
   
 }
 .right{
-  color: black;
+  color: white;
  
   text-align: center;
   
@@ -125,6 +125,41 @@ button{
   right: 30px;
   margin-top: 50px;
 }
+.baki{
+  color: red;
+  background: #C7060617;
+}
+.joma{
+  color:green;
+  background:#15C70617;
+}
+.mot-taka{
+  color: #9A06C7;
+  background: #9A06C729;
+}
+.tarikh{
+  display: flex;
+  margin: 3px 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+.tarikh p{
+  font-weight: bold;
+  color: #F80505;
+  margin-right: 3px;
+ 
+}
+.tarikh div{
+  width: 25px;
+  height: 25px;
+  background: #05F8AB14;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+ 
+}
  </style>
 </head>
 <body class="py-8 px-8">
@@ -145,9 +180,18 @@ button{
     
   </header>
   <div class="main-part">
-    <div>
-      <p>নং </p>
-      <p>তারিখ</p>
+    <div class="tarikh">
+      
+      <p>তারিখঃ</p>
+      <div>
+        ১২
+      </div>
+      <div>
+        ৪
+      </div>
+      <div>
+        ২০২২
+      </div>
     </div>
   </div>
   
@@ -176,19 +220,19 @@ button{
   <!-- mot -->
   <table class="mot">
     <tr>
-      <td>মোট</td>
+      <td class="mot-taka">মোট</td>
       <td>২০০</td>
 
       
     </tr>
         <tr>
-          <td>জমা</td>
+          <td class="joma">জমা</td>
           <td>২০০</td>
     
     
         </tr>
     <tr>
-      <td>বাকি</td>
+      <td class="baki">বাকি</td>
       <td>০</td>
     
     </tr>
