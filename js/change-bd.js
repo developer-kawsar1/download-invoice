@@ -1,6 +1,9 @@
 var bgcolour;
 var bgChangebtn=document.getElementById('change-bg');
+const addProduct=document.getElementById('add-product')
 var capture=document.getElementById('capture');
+
+let tbody=document.getElementById('tbody')
 
 
 window.onload = function theme() {
@@ -41,3 +44,15 @@ let arr=[
  
  
   ]
+  
+  
+addProduct.addEventListener('click',function(){
+  let tr=document.createElement('tr');
+  tr.innerHTML=`
+    <td>১</td> 
+    <td class = "biboron" > uu </td><td> yy</td> <td class = "dor"> bb</td> <td > mm</td>
+  
+  `
+  console.log(tr);
+  tbody.appendChild(tr)
+})

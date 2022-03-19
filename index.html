@@ -17,9 +17,14 @@
     background-color: #6200EE;
    height:100px;
     
-    padding: 1rem;
-    display: flex;
     
+    display: flex;
+    text-align: center;
+    background: #F0FFF0;
+    border: 1px solid green;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
     
     justify-content: space-between;
   }
@@ -36,7 +41,12 @@
   
 }
 .right{
-  color: #fff;
+  color: black;
+ 
+  text-align: center;
+  
+  width: 100%;
+  padding: 10px;
 }
 .right h1{
   
@@ -63,6 +73,8 @@ table{
  margin: 0 auto;
  border-collapse: collapse;
  font-size: 0px;
+ z-index: 10;
+
  
 }
 td{
@@ -75,6 +87,7 @@ td{
  width: 150px;
  font-size: 25px;
  padding: 5px;
+ background: #ffeeee;
  
 }
 .first{
@@ -82,12 +95,13 @@ td{
   text-align: center;
 }
 .bottom{
-  height: 200px;
+ height: 350px;
   text-align: center;
+  
 }
 .bottom:nth-child(2) {
-  background: red;
-  display: none;
+  
+  
 }
 button{
   padding: 10px 20px;
@@ -101,25 +115,32 @@ button{
   background: #9F14B3;
   color:#fff;
 }
+.dor{
+  background: #ffeeee;
+}
+.mot{
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  margin-top: 50px;
+}
  </style>
 </head>
 <body class="py-8 px-8">
 
 <div id="capture">
   <div class="inner">
+    
   <header>
    <div class="left">
      <img src="images/logo.png" alt="" width="150" height="50" style="margin-top: 20px;">
      
    </div>
    <div class="right">
-     <p class="title">ইখওয়ান শপ</p>
-     <tabe>
-       <tr>
-         <td>Invoice number</td>
-         <td>1122</td>
-       </tr>
-     </table>
+     <p class="title">তিজারাহ <span>শপ</span></p>
+     <p>রায়চো বাজার,কাপাসিয়া,গাজীপুর </p>
+    <p class="info">এখানে দেশীয় অর্গানিক ফুড পাওয়া যায়</p>
    </div>
     
   </header>
@@ -131,29 +152,46 @@ button{
   </div>
   
   <table>
-    <tr class="table-first-row">
-      <td class="first">সংখ্যা</td>
-      <td>বিবরণ</td>
-      <td>পরিমান</td>
-      <td>দর </td> 
-      <td>টাকা</td>
+<thead>
+      <tr class="table-first-row">
+        <td class="first">সংখ্যা</td>
+        <td>বিবরণ</td>
+        <td>পরিমান</td>
+        <td>দর </td>
+        <td>টাকা</td>
+      </tr>
+</thead>
+<tbody id="tbody">
+      <tr class="bottom">
+        <td>১</td>
+        <td class="biboron">গায়ে হলুদের পাঞ্জাবি
+        </td>
+        <td> ২ টি</td>
+        <td class="dor"> ৩০০</td>
+        <td>৮৮</td>
+      </tr>
+</tbody>
+
+  </table>
+  <!-- mot -->
+  <table class="mot">
+    <tr>
+      <td>মোট</td>
+      <td>২০০</td>
+
+      
     </tr>
-    <tr class="bottom">
-      <td>১</td>
-      <td class="biboron">রেজি  শিখতে এখুনি জয়েন করুন। 
-</td>
-      <td> ১০০</td> 
-      <td> ১২০০</td>
-      <td>৮৮</td>
-    </tr>
-        <tr class="bottom">
-          <td>১</td>
-          <td class="biboron">একটি 
-          </td>
-          <td> ১০০</td>
-          <td> ১২০০</td>
-          <td> ৬৬</td>
+        <tr>
+          <td>জমা</td>
+          <td>২০০</td>
+    
+    
         </tr>
+    <tr>
+      <td>বাকি</td>
+      <td>০</td>
+    
+    </tr>
   </table>
   </div>
 </div>
@@ -162,6 +200,7 @@ button{
 
 <button type="button" class="btnScreenShot" id="btnScreenShot">Take a Screenshot</button>
 <button id="change-bg">Chnage bg</button>
+<button id="add-product">Add something</button>
 <div id="output"></div>
   <script src="index.js">index.js</script>
   <script src="js/change-bd.js"></script>
