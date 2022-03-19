@@ -1,0 +1,58 @@
+@font-face {
+  font-family: handFont;
+  src: url(fonts/Punarbhaba_27-02-2006.ttf);
+}
+@font-face {
+  font-family:solaiman;
+  src: url(fonts/solaimanLipi.ttf);
+}
+@font-face {
+  font-family: stylish;
+  src: url(fonts/stylish.ttf);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1px;
+  box-sizing: border-box;
+  
+  }
+  body{
+ padding-top: 100px;
+ font-family: solaiman;
+  }
+  #capture {
+  background-color: #fff;
+ 
+  padding: 10% 0;
+  
+  
+  background-image: linear-gradient(to right,#662D8C , #ED1E79);
+  width: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+ 
+}
+.title{
+  font-family:  stylish !important;
+  font-size: 45px;
+  line-height: 40px;
+  
+  
+}
+
+.inner{
+  
+  height: 90%;
+  width: 90%;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding-bottom: 50px;
+
+  
+}
+
