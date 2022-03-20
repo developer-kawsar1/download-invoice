@@ -18,7 +18,7 @@
   
   }
   body{
- padding-top: 100px;
+ padding-top: 20px;
  font-family: solaiman;
   }
   #capture {
@@ -28,7 +28,7 @@
   
   
   background-image: linear-gradient(to right,#662D8C , #ED1E79);
-  width: 600px;
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;

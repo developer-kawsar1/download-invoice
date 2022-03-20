@@ -101,7 +101,7 @@
 
      .biboron {
        width: 150px;
-       font-size: 25px;
+       font-size: 20px;
        padding: 5px;
        background: #ffeeee;
 
@@ -113,7 +113,7 @@
      }
 
      .bottom {
-       height: 350px;
+       height: 250px;
        text-align: center;
 
      }
@@ -144,6 +144,7 @@
        bottom: 15px;
        right: 30px;
        margin-top: 50px;
+      
      }
 
      .baki {
@@ -322,23 +323,54 @@
    <button id="add-product">Add something</button>
    <button id="myBtn">Open Modal</button>
    <div id="output"></div>
-   
+
    <!-- modal -->
    <div id="myModal" class="modal">
-   
+
      <!-- Modal content -->
      <div class="modal-content">
        <span class="close">&times;</span>
-       <p>Some text in the Modal..</p>
+       <div>
+         <div class= "input-group">
+          <label for="name">Name</label>
+         <input type="text" placeholder="customer name" id="name">
+
+         </div>
+                  <div class= "input-group">
+          <label for="address">Address</label>
+         <input type="text" placeholder="customer name" id="address">
+
+         </div>
+                  <div class= "input-group">
+          <label for="description">product description</label>
+         <input type="text" placeholder="customer name" id="description">
+
+         </div>
+                  <div class= "input-group">
+          <label for="name">priman</label>
+         <input type="text" placeholder="customer name" id="name">
+
+         </div>
+                  <div class= "input-group">
+          <label for="name">Dor</label>
+         <input type="text" placeholder="customer name" id="name">
+
+         </div>
+                  <div class= "input-group">
+          <label for="name">Tk</label>
+         <input type="text" placeholder="customer name" id="name">
+
+         </div>
+       </div>
      </div>
-   
+
    </div>
    <!-- modal -->
    <script src="index.js">
      index.js
    </script>
    <script src="js/change-bd.js"></script>
- <script src="js/modal.js"></script>
+   <script src="js/modal.js"></script>
  </body>
 
  </html>
