@@ -1,295 +1,344 @@
  <!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script> -->
-  
-  <script src="html2canvas.js"></script>
-<link rel="stylesheet" href="main.css">
- <style>
- *{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
- p{
-   margin: 0;
-   padding: 0;
- }
-  header{
-    background-color: #5b39c6;
-   height:120px;
-    
-    
-    display: flex;
-    text-align: center;
-    color: #fff;
-    border: 1px solid green;
-    padding: 0px;
-    width: 100%;
-    margin: auto;
-    
-    justify-content: space-between;
-  }
- .left{
-   color: #fff;
-  position: absolute;
-  bottom: 0;
-   
- }
-.left img{
-  margin-top: -20px;
-  
-  
-  
-}
-.right{
-  color: white;
- 
-  text-align: center;
-  
-  width: 100%;
-  padding: 10px;
-}
-.right h1{
-  
-}
-td{
-  font-size: 10px;
-  font-weight: bold;
-}
- .header-top{
-   background:green;
-   
-   width: 50%;
-   clip-path: polygon(100% 0, 100% 30%, 24% 31%, 0 0);
-   position: absolute;
-   right:0 ;
-   height: 150px;
- }
-.main-part{
-   padding: 0 8%;
- }
-table{
-  border: 1px solid #eee;
-  width: 90%;
- margin: 0 auto;
- border-collapse: collapse;
- font-size: 0px;
- z-index: 10;
+ <html>
 
- 
-}
-td{
-  border: 1px solid #eee;
-  font-size: 20px;
-  text-align: center;
-  padding: 5px;
-}
-.biboron{
- width: 150px;
- font-size: 25px;
- padding: 5px;
- background: #ffeeee;
- 
-}
-.first{
-  width: 30px;
-  text-align: center;
-}
-.bottom{
- height: 350px;
-  text-align: center;
-  
-}
-.bottom:nth-child(2) {
-  
-  
-}
-button{
-  padding: 10px 20px;
-  background: #D8158A;
-  color: #fff;
-  border: none;
-  margin: 10px 20px;
-  font-size: 30px;
-}
-.table-first-row{
-  background: #9F14B3;
-  color:#fff;
-}
-.dor{
-  background: #ffeeee;
-}
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/modal.css">
+   <!--<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script> -->
 
-.mot{
-  width: 100px;
-  position: absolute;
-  bottom: 15px;
-  right: 30px;
-  margin-top: 50px;
-}
-.baki{
-  color: red;
-  background: #C7060617;
-}
-.joma{
-  color:green;
-  background:#15C70617;
-}
-.mot-taka{
-  color: #9A06C7;
-  background: #9A06C729;
-}
-.tarikh{
-  display: flex;
-  margin: 3px 0;
-  align-items: center;
-  justify-content: flex-end;
-}
-.tarikh p{
-  font-weight: bold;
-  color: #F80505;
-  margin-right: 3px;
- 
-}
-.tarikh div{
- min-width: 25px;
-  height: 25px;
-  background: #05F8AB14;
-  margin-right: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  border: 1px solid green;
-  padding: 2px;
- 
-}
-.info{
-  font-size: 25px;
-  color: #DAFFB8;
-}
-/* name part*/
-.name-div{
-  margin: 10px 0;
-}
-.name-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.name-container p{
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-.name-container div{
-  height: 30px;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  border-bottom: 1px dashed black;
-}
- </style>
-</head>
-<body class="py-8 px-8">
+   <script src="html2canvas.js"></script>
+   <link rel="stylesheet" href="main.css">
+   <style>
+     * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+     }
 
-<div id="capture">
-  <div class="inner">
-    
-  <header>
-   <div class="left">
-     <img src="images/logo.png" alt="" width="150" height="50" style="margin-top: 20px;">
-     
-   </div>
-   <div class="right">
-     <p class="title">তিজারাহ <span>শপ</span></p>
-     <p>রায়চো বাজার,কাপাসিয়া,গাজীপুর </p>
-    <p class="info">এখানে দেশীয় অর্গানিক ফুড পাওয়া যায়</p>
-   </div>
-    
-  </header>
-  <div class="main-part">
-    <div class="tarikh">
-      
-      <p>তারিখঃ</p>
-      <div>
-        ১২
-      </div>
-      <div>
-        ৪
-      </div>
-      <div>
-        ২০২২
-      </div>
-    </div>
-   <!-- tarikh part ses -->
-   <!-- name part start -->
-   <div class="name-div">
-     <div class="name-container">
-       <p>নামঃ</p>
-       <div>
-         div😭😭
+     p {
+       margin: 0;
+       padding: 0;
+     }
+
+     header {
+       background-color: #5b39c6;
+       height: 120px;
+
+
+       display: flex;
+       text-align: center;
+       color: #fff;
+       border: 1px solid green;
+       padding: 0px;
+       width: 100%;
+       margin: auto;
+
+       justify-content: space-between;
+     }
+
+     .left {
+       color: #fff;
+       position: absolute;
+       bottom: 0;
+
+     }
+
+     .left img {
+       margin-top: -20px;
+
+
+
+     }
+
+     .right {
+       color: white;
+
+       text-align: center;
+
+       width: 100%;
+       padding: 10px;
+     }
+
+     .right h1 {}
+
+     td {
+       font-size: 10px;
+       font-weight: bold;
+     }
+
+     .header-top {
+       background: green;
+
+       width: 50%;
+       clip-path: polygon(100% 0, 100% 30%, 24% 31%, 0 0);
+       position: absolute;
+       right: 0;
+       height: 150px;
+     }
+
+     .main-part {
+       padding: 0 8%;
+     }
+
+     table {
+       border: 1px solid #eee;
+       width: 90%;
+       margin: 0 auto;
+       border-collapse: collapse;
+       font-size: 0px;
+       z-index: 10;
+
+
+     }
+
+     td {
+       border: 1px solid #eee;
+       font-size: 20px;
+       text-align: center;
+       padding: 5px;
+     }
+
+     .biboron {
+       width: 150px;
+       font-size: 25px;
+       padding: 5px;
+       background: #ffeeee;
+
+     }
+
+     .first {
+       width: 30px;
+       text-align: center;
+     }
+
+     .bottom {
+       height: 350px;
+       text-align: center;
+
+     }
+
+     .bottom:nth-child(2) {}
+
+     button {
+       padding: 10px 20px;
+       background: #D8158A;
+       color: #fff;
+       border: none;
+       margin: 10px 20px;
+       font-size: 30px;
+     }
+
+     .table-first-row {
+       background: #9F14B3;
+       color: #fff;
+     }
+
+     .dor {
+       background: #ffeeee;
+     }
+
+     .mot {
+       width: 100px;
+       position: absolute;
+       bottom: 15px;
+       right: 30px;
+       margin-top: 50px;
+     }
+
+     .baki {
+       color: red;
+       background: #C7060617;
+     }
+
+     .joma {
+       color: green;
+       background: #15C70617;
+     }
+
+     .mot-taka {
+       color: #9A06C7;
+       background: #9A06C729;
+     }
+
+     .tarikh {
+       display: flex;
+       margin: 3px 0;
+       align-items: center;
+       justify-content: flex-end;
+     }
+
+     .tarikh p {
+       font-weight: bold;
+       color: #F80505;
+       margin-right: 3px;
+
+     }
+
+     .tarikh div {
+       min-width: 25px;
+       height: 25px;
+       background: #05F8AB14;
+       margin-right: 2px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-weight: bold;
+       border: 1px solid green;
+       padding: 2px;
+
+     }
+
+     .info {
+       font-size: 25px;
+       color: #DAFFB8;
+     }
+
+     /* name part*/
+     .name-div {
+       margin: 10px 0;
+     }
+
+     .name-container {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-end;
+     }
+
+     .name-container p {
+       font-size: 20px;
+       font-weight: bold;
+       margin-right: 10px;
+     }
+
+     .name-container div {
+       height: 30px;
+       width: 100%;
+       display: flex;
+       align-items: flex-end;
+       border-bottom: 1px dashed black;
+       margin-block: 5px;
+       margin-right: 10px;
+     }
+   </style>
+ </head>
+
+ <body class="py-8 px-8">
+
+   <div id="capture">
+     <div class="inner">
+
+       <header>
+         <div class="left">
+           <img src="images/logo.png" alt="" width="150" height="50" style="margin-top: 20px;">
+
+         </div>
+         <div class="right">
+           <p class="title">তিজারাহ <span>শপ</span></p>
+           <p>রায়চো বাজার,কাপাসিয়া,গাজীপুর </p>
+           <p class="info">এখানে দেশীয় অর্গানিক ফুড পাওয়া যায়</p>
+         </div>
+
+       </header>
+       <div class="main-part">
+         <div class="tarikh">
+
+           <p>তারিখঃ</p>
+           <div>
+             ১২
+           </div>
+           <div>
+             ৪
+           </div>
+           <div>
+             ২০২২
+           </div>
+         </div>
+         <!-- tarikh part ses -->
+         <!-- name part start -->
+         <div class="name-div">
+           <div class="name-container">
+             <p>নামঃ</p>
+             <div>
+               div😭😭
+             </div>
+             <p>ঠিকানা</p>
+             <div>
+               div2😭😭
+             </div>
+           </div>
+         </div>
        </div>
+
+       <table id="cash-table">
+         <thead>
+           <tr class="table-first-row">
+             <td class="first">সংখ্যা</td>
+             <td>বিবরণ</td>
+             <td>পরিমান</td>
+             <td>দর </td>
+             <td>টাকা</td>
+           </tr>
+         </thead>
+         <tbody id="tbody">
+           <tr class="bottom">
+             <td>১</td>
+             <td class="biboron">গায়ে হলুদের পাঞ্জাবিhhh কাা হা্্ তা্ নেিিট চবো হজটব কবি হজটি িপচ গজচব ববকগ তা্
+             </td>
+             <td> ২ টি</td>
+             <td class="dor"> ৩০০</td>
+             <td>৮৮</td>
+           </tr>
+         </tbody>
+
+       </table>
+       <!-- mot -->
+       <table class="mot">
+         <tr>
+           <td class="mot-taka">মোট</td>
+           <td>২০০</td>
+
+
+         </tr>
+         <tr>
+           <td class="joma">জমা</td>
+           <td>২০০</td>
+
+
+         </tr>
+         <tr>
+           <td class="baki">বাকি</td>
+           <td>০</td>
+
+         </tr>
+       </table>
      </div>
    </div>
-  </div>
-  
-  <table>
-<thead>
-      <tr class="table-first-row">
-        <td class="first">সংখ্যা</td>
-        <td>বিবরণ</td>
-        <td>পরিমান</td>
-        <td>দর </td>
-        <td>টাকা</td>
-      </tr>
-</thead>
-<tbody id="tbody">
-      <tr class="bottom">
-        <td>১</td>
-        <td class="biboron">গায়ে হলুদের পাঞ্জাবি
-        </td>
-        <td> ২ টি</td>
-        <td class="dor"> ৩০০</td>
-        <td>৮৮</td>
-      </tr>
-</tbody>
-
-  </table>
-  <!-- mot -->
-  <table class="mot">
-    <tr>
-      <td class="mot-taka">মোট</td>
-      <td>২০০</td>
-
-      
-    </tr>
-        <tr>
-          <td class="joma">জমা</td>
-          <td>২০০</td>
-    
-    
-        </tr>
-    <tr>
-      <td class="baki">বাকি</td>
-      <td>০</td>
-    
-    </tr>
-  </table>
-  </div>
-</div>
 
 
 
-<button type="button" class="btnScreenShot" id="btnScreenShot">Take a Screenshot</button>
-<button id="change-bg">Chnage bg</button>
-<button id="add-product">Add something</button>
-<div id="output"></div>
-  <script src="index.js">index.js</script>
-  <script src="js/change-bd.js"></script>
-  
-</body>
-</html>
+   <button type="button" class="btnScreenShot" id="btnScreenShot">Take a Screenshot</button>
+   <button id="change-bg">Chnage bg</button>
+   <button id="add-product">Add something</button>
+   <button id="myBtn">Open Modal</button>
+   <div id="output"></div>
+   
+   <!-- modal -->
+   <div id="myModal" class="modal">
+   
+     <!-- Modal content -->
+     <div class="modal-content">
+       <span class="close">&times;</span>
+       <p>Some text in the Modal..</p>
+     </div>
+   
+   </div>
+   <!-- modal -->
+   <script src="index.js">
+     index.js
+   </script>
+   <script src="js/change-bd.js"></script>
+ <script src="js/modal.js"></script>
+ </body>
+
+ </html>

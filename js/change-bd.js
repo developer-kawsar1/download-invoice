@@ -4,6 +4,10 @@ const addProduct=document.getElementById('add-product')
 var capture=document.getElementById('capture');
 
 let tbody=document.getElementById('tbody')
+var table = document.getElementById("cash-table");
+var totalRowCount = table.rows.length;
+console.log(totalRowCount);
+
 
 
 window.onload = function theme() {
@@ -53,6 +57,37 @@ addProduct.addEventListener('click',function(){
     <td class = "biboron" > uu </td><td> yy</td> <td class = "dor"> bb</td> <td > mm</td>
   
   `
-  console.log(tr);
   tbody.appendChild(tr)
+  var tbodyRowCount = table.tBodies[0].rows.length;
+  var tbodyRows=table.tBodies[0].rows
+  
+  
+  
+  if(tbodyRowCount==1){
+    tbodyRows[0].style.display=''
+      tbodyRows[0].style.height = '150px'
+      
+  }else if(tbodyRowCount==2){
+    tbodyRows[0].style.height='150px'
+    tbodyRows[1].style.height='150px'
+  }else if(tbodyRowCount==3){
+    tbodyRows[0].style.height = '100px'
+  tbodyRows[1].style.height = '100px'
+  tbodyRows[2].style.height = '100px'
+  }else if (tbodyRowCount == 4) {
+    tbodyRows[0].style.height = '70px'
+    tbodyRows[1].style.height = '70px'
+    tbodyRows[2].style.height = '70px'
+    tbodyRows[3].style.height = '70px'
+  
+
+  }else if (tbodyRowCount == 5) {
+    tbodyRows[0].style.height = '60px'
+    tbodyRows[1].style.height = '60px'
+    tbodyRows[2].style.height = '60px'
+    tbodyRows[3].style.height = '60px'
+    tbodyRows[4].style.height = '60px'
+  
+  }
+  
 })
