@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/modal.css">
    <!--<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <script src="html2canvas.js"></script>
    <link rel="stylesheet" href="main.css">
@@ -87,7 +88,7 @@
        margin: 0 auto;
        border-collapse: collapse;
        font-size: 0px;
-       z-index: 10;
+       z-index: 1;
 
 
      }
@@ -101,9 +102,10 @@
 
      .biboron {
        width: 150px;
-       font-size: 20px;
+       font-size: 16px;
        padding: 5px;
        background: #ffeeee;
+      
 
      }
 
@@ -221,6 +223,29 @@
        margin-block: 5px;
        margin-right: 10px;
      }
+     /* footer */
+     #foter{
+  height: 60px;
+  width: 100%;
+  background: #9023ED;
+  color: #fff;
+  position:fixed;
+  bottom:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  
+  
+ 
+}
+#foter i{
+  background: transparent;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 30px;
+}
+
    </style>
  </head>
 
@@ -261,11 +286,11 @@
            <div class="name-container">
              <p>নামঃ</p>
              <div>
-               div😭😭
+              কাওছার আহমেদ
              </div>
              <p>ঠিকানা</p>
              <div>
-               div2😭😭
+               কাপাসিয়া , গাজীপুর
              </div>
            </div>
          </div>
@@ -315,14 +340,22 @@
        </table>
      </div>
    </div>
-
+   <div id="foter">
+     <i id="myBtn" class="fa fa-plus"></i>
+      <i id="btnScreenShot" class="fa fa-download"></i>
+       <i>😐</i>
+        <i>😐</i>
+     i
+   </div>
 
 
    <button type="button" class="btnScreenShot" id="btnScreenShot">Take a Screenshot</button>
    <button id="change-bg">Chnage bg</button>
    <button id="add-product">Add something</button>
    <button id="myBtn">Open Modal</button>
-   <div id="output"></div>
+  
+   
+
 
    <!-- modal -->
    <div id="myModal" class="modal">
@@ -356,7 +389,7 @@
          <input type="text" placeholder="customer name" id="name">
 
          </div>
-                  <div class= "input-group">
+            <div class= "input-group">
           <label for="name">Tk</label>
          <input type="text" placeholder="customer name" id="name">
 
@@ -366,6 +399,12 @@
 
    </div>
    <!-- modal -->
+   
+   
+   
+   <!-- bottom bar -->
+
+   <!-- bottom bar -->
    <script src="index.js">
      index.js
    </script>
