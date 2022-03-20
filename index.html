@@ -13,9 +13,13 @@
    margin: 0;
    padding: 0;
  }
+ p{
+   margin: 0;
+   padding: 0;
+ }
   header{
     background-color: #5b39c6;
-   height:100px;
+   height:120px;
     
     
     display: flex;
@@ -118,10 +122,11 @@ button{
 .dor{
   background: #ffeeee;
 }
+
 .mot{
   width: 100px;
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   right: 30px;
   margin-top: 50px;
 }
@@ -150,15 +155,42 @@ button{
  
 }
 .tarikh div{
-  width: 25px;
+ min-width: 25px;
   height: 25px;
   background: #05F8AB14;
-  margin-right: 5px;
+  margin-right: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  border: 1px solid green;
+  padding: 2px;
  
+}
+.info{
+  font-size: 25px;
+  color: #DAFFB8;
+}
+/* name part*/
+.name-div{
+  margin: 10px 0;
+}
+.name-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.name-container p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.name-container div{
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px dashed black;
 }
  </style>
 </head>
@@ -193,6 +225,16 @@ button{
         ২০২২
       </div>
     </div>
+   <!-- tarikh part ses -->
+   <!-- name part start -->
+   <div class="name-div">
+     <div class="name-container">
+       <p>নামঃ</p>
+       <div>
+         div😭😭
+       </div>
+     </div>
+   </div>
   </div>
   
   <table>
