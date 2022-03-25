@@ -80,7 +80,7 @@ const mash = [
  
   ];
 let eiMash=mash[d.getMonth()]
-console.log(eiMash);
+//console.log(eiMash);
 document.getElementById('month').innerHTML=eiMash
 
 
@@ -93,7 +93,7 @@ let banglaDate=makeBangla(String(day))
 document.getElementById('day').innerHTML=banglaDate
 let log=arg=> console.log(arg);
 
-log(banglaMonth)
+//log(banglaMonth)
 
 //বার
 const weekday = [

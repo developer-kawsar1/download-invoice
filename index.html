@@ -41,7 +41,7 @@
      .left {
        color: #fff;
        position: absolute;
-       bottom: 0;
+       bottom: 20px;
 
      }
 
@@ -102,10 +102,10 @@
 
      .biboron {
        width: 150px;
-       font-size: 16px;
+       font-size: 14px;
        padding: 5px;
        background: #ffeeee;
-      
+
 
      }
 
@@ -124,11 +124,12 @@
 
      button {
        padding: 10px 20px;
-       background: #D8158A;
+       background: #5D19E8;
        color: #fff;
        border: none;
        margin: 10px 20px;
-       font-size: 30px;
+       font-size: 16px;
+       font-family: solaiman;
      }
 
      .table-first-row {
@@ -143,10 +144,10 @@
      .mot {
        width: 100px;
        position: absolute;
-       bottom: 15px;
+       bottom: 25px;
        right: 30px;
        margin-top: 50px;
-      
+
      }
 
      .baki {
@@ -193,7 +194,7 @@
      }
 
      .info {
-       font-size: 25px;
+       font-size: 20px;
        color: #DAFFB8;
      }
 
@@ -209,9 +210,10 @@
      }
 
      .name-container p {
-       font-size: 20px;
+       font-size: 15px;
        font-weight: bold;
        margin-right: 10px;
+       color: green;
      }
 
      .name-container div {
@@ -223,46 +225,78 @@
        margin-block: 5px;
        margin-right: 10px;
      }
-     /* footer */
-     #foter{
-  height: 60px;
-  width: 100%;
-  background: #9023ED;
-  color: #fff;
-  position:fixed;
-  bottom:0;
-  left:0;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  
-  
- 
-}
-#foter i{
-  background: transparent;
-  display: inline-block;
-  padding: 15px 20px;
-  font-size: 30px;
-}
 
+     /* footer */
+     #foter {
+       height: 60px;
+       width: 100%;
+       background: #fff;
+       color: #444;
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       
+       
+       z-index: 999;
+       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+
+     }
+     
+   #foter .wrapper{
+     width: 100%;
+     max-width: 800px;
+     margin: auto;
+     display: flex;
+     padding: 5px 8%;
+       align-items: center;
+       justify-content: space-between;
+   }
+#foter .wrapper div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+     #foter i {
+       background: transparent;
+       display: inline-block;
+       padding-bottom: 3px;
+       font-size: 30px;
+     }
+     
+     #memo{
+       position: absolute;
+       top: 25px;
+       font-size: 18px;
+       background: #5D19E8;
+       color: #fff;
+       padding: 2px 10px;
+       border-radius: 25px;
+     }
    </style>
  </head>
 
  <body class="py-8 px-8">
-
+   <div> <!--
+     <i class="fa fa-gear fa-2x"></i>
+-->
+   </div>
    <div id="capture">
+     <p id="memo">ক্যাশ মেমো</p>
      <div class="inner">
 
        <header>
          <div class="left">
-           <img src="images/logo.png" alt="" width="150" height="50" style="margin-top: 20px;">
+           <img src="images/nahla.jpg" alt="" width="150" height="50" style="margin-top: 20px;">
 
          </div>
          <div class="right">
-           <p class="title">তিজারাহ <span>শপ</span></p>
-           <p>রায়চো বাজার,কাপাসিয়া,গাজীপুর </p>
-           <p class="info">এখানে দেশীয় অর্গানিক ফুড পাওয়া যায়</p>
+           <p class="title"> নাহলা <span>শপ</span></p>
+           <p>কাপাসিয়া,গাজীপুর </p>
+           <p class="info">স্বত্বাধিকারীঃ মাওলানা মুশতাক আহমেদ </p>
          </div>
 
        </header>
@@ -271,13 +305,13 @@
 
            <p>তারিখঃ</p>
            <div id="day">
-             
+
            </div>
            <div id="month">
-             
+
            </div>
            <div id="year">
-             
+
            </div>
            <div id="bar">
              রবিবার
@@ -288,12 +322,12 @@
          <div class="name-div">
            <div class="name-container">
              <p>নামঃ</p>
-             <div>
-              কাওছার আহমেদ
+             <div id="name-div">
+
              </div>
              <p>ঠিকানা</p>
-             <div>
-             কাপাসিয়া,গাজীপুর
+             <div id="address-div">
+
              </div>
            </div>
          </div>
@@ -302,7 +336,7 @@
        <table id="cash-table">
          <thead>
            <tr class="table-first-row">
-             <td class="first">সংখ্যা</td>
+             <td class="first">ক্রমিক </td>
              <td>বিবরণ</td>
              <td>পরিমান</td>
              <td>দর </td>
@@ -327,13 +361,13 @@
        <table class="mot">
          <tr>
            <td class="mot-taka">মোট</td>
-           <td>২০০</td>
+           <td id="last-mot">০</td>
 
 
          </tr>
          <tr>
            <td class="joma">জমা</td>
-           <td>২০০</td>
+           <td>০</td>
 
 
          </tr>
@@ -343,19 +377,41 @@
 
          </tr>
        </table>
+       <p id="quote">আমাদের সাথে থাকার জন্য আন্তরিক ভাবে ধন্যবাদ</p>
      </div>
+
    </div>
-   <div id="foter">
-     <i id="myBtn" class="fa fa-plus"></i>
-      <i id="btnScreenShot" class="fa fa-download"></i>
+   <footer id="foter">
+<div class="wrapper">
+  <div class="">
+       <i id="myBtn" class="fa fa-plus"></i>
+       <p>প্রডাক্ট এড</p>
+</div>
+     
+     <div class="">
+       <img width="35" src="images/payment2.png" alt="">
+       <p>পেমেন্ট</p>
+
+     </div>
+            <div>
+              <i id="btnScreenShot" class="fa fa-download"></i>
+              <p>ডাউনলোড</p>
+            </div>
+    <div>
        <i id="change-bg" class="fa fa-gear"></i>
-        <i class="fa fa-refresh" id="refresh"></i>
-     i
-   </div>
+       <p>ব্যাকগ্রাউন্ড</p>
+    </div>
+<div>
+       <i class="fa fa-refresh" id="refresh"></i>
+       <p>রিফ্রেশ</p>
+</div>
+</div>
+
+   </footer>
 
 
 
-   
+
 
 
    <!-- modal -->
@@ -365,51 +421,56 @@
      <div class="modal-content">
        <span class="close">&times;</span>
        <div>
-         <div class= "input-group">
-          <label for="name">কাস্টমারের নাম</label>
-         <input type="text" placeholder="কাওছার আহমেদ" id="name">
+         <div class="input-group">
+           <label for="name">কাস্টমারের নাম</label>
+           <input type="text" placeholder=" " id="name">
 
          </div>
-                  <div class= "input-group">
-          <label for="address">ঠিকানা</label>
-         <input type="text" placeholder="কাপাসিয়া,গাজীপুর " id="address">
+         <div class="input-group">
+           <label for="address">ঠিকানা</label>
+           <input type="text" placeholder=" " id="address">
 
          </div>
-                  <div class= "input-group">
-          <label for="description">পণ্যের বিবরণ</label>
-         <input type="text" placeholder="গায়ে হলুদের পঞ্জাবি" id="description">
+         <div class="input-group">
+           <label for="description">পণ্যের বিবরণ</label>
+           <input type="text" placeholder="" id="description">
 
          </div>
-                  <div class= "input-group">
-          <label for="name">পরিমাণ</label>
-         <input type="text" placeholder="১০ পিস" id="product-quantity">
+         <div class="input-group">
+           <label for="name">পরিমাণ</label>
+           <input type="text" placeholder="" id="product-quantity">
 
          </div>
-                  <div class= "input-group">
-          <label for="name">দর</label>
-         <input type="text" placeholder="৩০০" id="product-dor">
+         <div class="input-group">
+           <label for="name">দর</label>
+           <input type="text" placeholder="" id="product-dor">
 
          </div>
-            <div class= "input-group">
-          <label for="name">টাকা</label>
-         <input type="text" placeholder="৩০০০" id="product-tk">
+         <div class="input-group">
+           <label for="name">টাকা</label>
+           <input type="text" placeholder="" id="product-tk">
 
          </div>
-         <button id="add-product">Submit</button>
+         <br>
+         <button id="add-product">পণ্য এড করুন</button>
+         <br>
+         <!--
+         demo: <input type="checkbox" id="myCheck" onclick="checkData()"> -->
        </div>
      </div>
 
    </div>
    <!-- modal -->
-   
-   
-   
+
+
+
    <!-- bottom bar -->
 
    <!-- bottom bar -->
    <script src="index.js">
      index.js
    </script>
+
    <script src="js/change-bd.js"></script>
    <script src="js/modal.js"></script>
  </body>

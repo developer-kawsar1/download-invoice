@@ -10,7 +10,7 @@ var capture=document.getElementById('capture');
 let tbody=document.getElementById('tbody')
 var table = document.getElementById("cash-table");
 var totalRowCount = table.rows.length;
-console.log(totalRowCount);
+//console.log(totalRowCount);
 
 
 
@@ -18,14 +18,14 @@ window.onload = function theme() {
   //capture.style.display = ;
  // localStorage.setItem("bgcolour",4 );
  var bg=localStorage.getItem('bgcolor')
- console.log(bg);
+ //console.log(bg);
  capture.style.backgroundImage=bg
 }
 
 
 bgChangebtn.addEventListener('click',function(){
   let random=Math.floor(Math.random()*arr.length)
-  console.log(random);
+  //console.log(random);
   capture.style.backgroundImage=arr[random]
   localStorage.setItem('bgcolor', arr[random]);
 })

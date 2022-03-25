@@ -62,11 +62,28 @@
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding-bottom: 120px;
+  margin-top: 10px;
   
   
 
   
 }
 
-
+#quote{
+  position: absolute;
+  bottom: 2px;
+  background: #0ACF5014;
+  color: green;
+ 
+  font-size: 10px;
+  font-weight: bold;
+  
+  text-align: center;
+  margin-top: 20px;
+ 
+  padding: 2px;
+ width: 100%;
+  
+  
+}
 
