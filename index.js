@@ -108,3 +108,25 @@ const weekday = [
 let bar=weekday[d.getDay()];
 document.getElementById('bar').innerHTML=bar
 
+$(document).ready(function(){
+ 
+  
+  
+	
+		
+		
+		if(window.localStorage.getItem('shop')){
+		  
+		}else{
+		  	$("#myModal2").modal('show');
+		  	
+		}
+	});
+	
+	
+	function setShop(){
+	  window.localStorage.setItem('shop', 'কাওছার শপ');
+	
+	alert(8)
+	  
+	}
